@@ -1,5 +1,5 @@
 ---
-title: Tag islands
+title: Tag Islands
 id: tag-islands
 ---
 
