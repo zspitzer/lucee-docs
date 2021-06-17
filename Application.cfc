@@ -4,6 +4,7 @@ component {
 	this.localMode = true;
 
 	variables.assetBundleVersion = 32; // must match lucee-docs\builders\html\assets\Gruntfile.js _version and server/application.cfc
+	application.assetBundleVersion = variables.assetBundleVersion;
 
 	this.cwd = GetDirectoryFromPath( GetCurrentTemplatePath() )
 
