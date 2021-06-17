@@ -5,6 +5,7 @@ component {
 
 	variables.assetBundleVersion = 32; // must match lucee-docs\builders\html\assets\Gruntfile.js _version and server/application.cfc
 	application.assetBundleVersion = variables.assetBundleVersion;
+	this.assetBundleVersion = variables.assetBundleVersion;
 
 	this.cwd = GetDirectoryFromPath( GetCurrentTemplatePath() )
 
@@ -16,6 +17,7 @@ component {
 
 	public boolean function onRequest( required string requestedTemplate ) output=true {
 		var logger = new api.build.Logger();
+		systemOutput("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
 
 		application.assetBundleVersion = variables.assetBundleVersion;
 
