@@ -15,9 +15,11 @@ component {
 	this.mappings[ "/import"   ] = this.cwd & "import";
 	this.mappings[ "/builds"   ] = this.cwd & "builds";
 
+	systemOutput( "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", true);
+
 	public boolean function onRequest( required string requestedTemplate ) output=true {
 		var logger = new api.build.Logger();
-		systemOutput("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+		systemOutput( "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", true );
 
 		application.assetBundleVersion = variables.assetBundleVersion;
 
