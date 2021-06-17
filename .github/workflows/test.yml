@@ -24,14 +24,12 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.m2
-          key: lucee-script-runner-maven-cache
+          key: lucee-script-runner-m2-cache
 
       # Runs a single command using the runners shell
       - uses: zspitzer/lucee-script-engine-runner@development
         with:
           webroot: ${{ github.workspace }}
-          execute: /import.cfm
-          luceeVersion: 6.0.0.95-SNAPSHOT
-          # luceeVersion: 5.3.7.48       
-          
-          
+          execute: /build-all.cfm
+          # luceeVersion: 6.0.0.95-SNAPSHOT
+          luceeVersion: 5.3.7.48
