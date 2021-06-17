@@ -1,4 +1,7 @@
 <cfprocessingdirective suppressWhitespace="true" />
 <cfsetting requesttimeout="1200" />
-<cfinclude  template="import.cfm">
-<cfinclude  template="build.cfm">
+<cfscript>
+	application.assetBundleVersion = trim( FileRead('assetBundleVersion.txt') ); 
+	include  template="import.cfm";
+	include  template="build.cfm";
+</cfscript>

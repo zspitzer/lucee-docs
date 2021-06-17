@@ -3,7 +3,7 @@ component {
 
 	this.localMode = true;
 
-	variables.assetBundleVersion = 32; // must match lucee-docs\builders\html\assets\Gruntfile.js _version and server/application.cfc
+	variables.assetBundleVersion = FileRead('assetBundleVersion.txt'); // must match lucee-docs\builders\html\assets\Gruntfile.js 
 	application.assetBundleVersion = variables.assetBundleVersion;
 	this.assetBundleVersion = variables.assetBundleVersion;
 

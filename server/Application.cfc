@@ -15,7 +15,7 @@ component {
 	this.mappings[ "/docs"     ] = this.baseDir & "docs";
 	this.mappings[ "/listener" ] = this.baseDir;
 	*/
-	this.assetBundleVersion = 32;  // see parent application.cfc
+	this.assetBundleVersion = trim( FileRead('../assetBundleVersion.txt') );  // see parent application.cfc
 
 	public void function onApplicationStart()  {
 		//_addChangeWatcher();
