@@ -32,7 +32,7 @@
 		if ( ( e.tagContext ?: [] ).len() ) {
 			echo( "" & newline );
 			echo( "Stacktrace:" & newline );
-			for( var tracePoint in e.tagContext ) {
+			for( tracePoint in e.tagContext ) {
 				echo( "    " & tracepoint.template & " (line #tracepoint.line#)" & newline );
 			}
 		}
